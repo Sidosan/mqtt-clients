@@ -4,7 +4,7 @@
   "description": "mqtt-clients ",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   "homepage": "https://github.com/Sidosan/mqtt-clients#readme",
   "dependencies": {
     "mongo": "^0.1.0",
-    "mongodb": "^3.6.2"
+    "mongodb": "^3.6.2",
+    "mqtt": "^4.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
   }
 }
