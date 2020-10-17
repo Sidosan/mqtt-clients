@@ -1,15 +1,8 @@
-const mongo = require('mongo');
+const { MongoClient } = require('mongodb');
 
-var conexao = mongo.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "admin",
-    database: "mqtt"
-});
+const mongo = require('mongodb').MongoClient;
+MongoClient.connect("mongodb://root:admin@localhost:27017/?authSource=admin")
+        .then(conn => console.log(conn))
+        .catch(err => console.log(err));
 
-conexao.connect(function (err){
-    if (err) throw err;
-
-    console.log("Conexao Realizada com sucesso!");
-})
 
