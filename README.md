@@ -38,10 +38,11 @@ cd e-clients
 ``` npm i mqtt ```
 
 ### Passo 5) Criar servidor (com Node.js)
-#### Para começar vamos criar o ficheiro index.js (indicado no package.json)
-```nano index.js``
+Para começar vamos criar o ficheiro index.js (indicado no package.json)
 
-### configuração analise de conexão:
+`` nano index.js ``
+
+configuração analise de conexão:
 
 ```
 const { MongoClient } = require('mongodb'); //depencia mongo
@@ -56,7 +57,7 @@ MongoClient.connect("mongodb://root:admin@localhost:27017/?authSource=admin")
 
 ### Passo 6) Criar a conexão MQTT
 
-#### Meu Broker MQTT só pode ter acesso se estiver previamente autorizado dentro do banco de dados, ou seja, nao vai conseguir se conectar se não estiver registrado dentro do banco.
+Meu Broker MQTT só pode ter acesso se estiver previamente autorizado dentro do banco de dados, ou seja, nao vai conseguir se conectar se não estiver registrado dentro do banco.
 
 ```
 var options = {
