@@ -1,13 +1,12 @@
 # mqtt-clients
-mqtt-clients(Node)
 
 
 ### Vamos fazer um cliente mqtt automatizado com nodeJS.
-#### Esse cliente mqtt tera uma autentificação dentro de um banco de dados mongoDB e logo depois começar a publicar e ler topicos.
+Esse cliente mqtt tera uma autentificação dentro de um banco de dados mongoDB e logo depois começar a publicar e ler topicos.
 
 ## Vamos começar…
 ### Passo 1) Instalar o Node.js no Ubuntu e derivados
-### A instalação do Node.js é relativamente simples. Para tal basta abrir o terminal e executar os seguintes comandos:
+A instalação do Node.js é relativamente simples. Para tal basta abrir o terminal e executar os seguintes comandos:
 
 ``` 
 sudo apt-get update
@@ -23,12 +22,12 @@ cd e-clients
 ```
 
 ### Passo 3) Iniciar projeto
-#### Para iniciar o projeto deve executar o comando:
+Para iniciar o projeto deve executar o comando:
 ```npm init```
 
-#### No final será criado o ficheiro package.json. Este ficheiro guarda informações sobre o projeto e também sobre as dependências (pacotes) do mesmo.
+No final será criado o ficheiro package.json. Este ficheiro guarda informações sobre o projeto e também sobre as dependências (pacotes) do mesmo.
 ### Passo 4) Instalação de pacotes necessários
-#### Para este projeto vamos precisar de instalar os módulos:
+Para este projeto vamos precisar de instalar os módulos:
 
 #### mongodb:
 ``` npm i mongodb --start ```
