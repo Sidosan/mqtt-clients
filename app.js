@@ -22,7 +22,7 @@ client.on('connect', function(){
 
     client.subscribe('+/#', function(){
 
-        console.log("Inscrito ao tropico!");
+        console.log("Inscrito ao topico!");
     })
 
 });
